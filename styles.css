@@ -1,0 +1,69 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 500px; /* Set to the desired container height */
+  width: 500px;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  flex: 9; /* Equal height for both rows */
+  background-color: red;
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1; /* Equal height for both rows */
+  background-color: red;
+}
+
+.cell {
+  flex: 1; /* Equal width for cells without fixed width */
+  /* color: white; */
+  background-color: blue;
+}
+
+.cell-fixed-width {
+  flex: 0 0 10%; /* Fixed width of 10% */
+  background-color: yellow;
+}
+
+/* Style for the bottom row */
+.container .row:last-child {
+  flex: 0 0 10%; /* Fixed height of 10% */
+}
+
+.bottom-right-square {
+  width: 10%;
+  height: 10%;
+  position: relative;
+  padding-bottom: 100%; /* This makes the height equal to the width */
+  box-sizing: border-box;
+  background-color: aquamarine;
+}
+
+.top-left-square p,
+.bottom-right-square p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: blueviolet;
+}
