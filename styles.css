@@ -18,7 +18,7 @@ html {
   display: flex;
   flex-direction: row;
   flex: 9; /* Equal height for both rows */
-  background-color: red;
+  background-color: maroon;
 }
 
 .bottom-row {
@@ -53,17 +53,9 @@ html {
   background-color: aquamarine;
 }
 
-.top-left-square p,
-.bottom-right-square p {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .content {
   width: 100%;
   height: 100%;
+  flex: 0 90% 90% !important;
   background-color: blueviolet;
 }
