@@ -36,21 +36,37 @@ html {
 
 .cell-fixed-width {
   flex: 0 0 10%; /* Fixed width of 10% */
-  background-color: yellow;
+  background-color: blue;
 }
 
+.cell-fixed-width-end {
+  flex: 0 0 10%; /* Fixed width of 10% */
+  background-color: greenyellow;
+  margin-left: 80%;
+}
 /* Style for the bottom row */
 .container .row:last-child {
   flex: 0 0 10%; /* Fixed height of 10% */
 }
 
-.bottom-right-square {
-  width: 10%;
-  height: 10%;
+.bottom-right-anchor {
+  height: 100%;
   position: relative;
-  padding-bottom: 100%; /* This makes the height equal to the width */
+  display: flex;
   box-sizing: border-box;
   background-color: aquamarine;
+}
+
+.bottom-left-anchor {
+  background-color: yellow;
+  height: 100%;
+  display: flex;
+}
+
+.top-left-square {
+  width: 100%;
+  display: flex;
+  background-color: chartreuse;
 }
 
 .content {
